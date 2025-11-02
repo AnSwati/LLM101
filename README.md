@@ -261,63 +261,6 @@ load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
 ```
 
----
-
-## Troubleshooting
-
-### Issue: "Free trial credits expired"
-**Solution**: 
-- Upgrade to a paid account
-- Add a payment method in Billing settings
-- See current pricing at: https://openai.com/pricing
-
-### Issue: "API key not working / Authentication failed"
-**Solution**:
-- Verify the key is copied completely (check for missing characters)
-- Ensure there are no extra spaces before/after the key
-- Check if the key has been revoked (view in API keys page)
-- Try creating a new key
-
-### Issue: "Can't find API keys in settings"
-**Solution**:
-- Log out and log back in
-- Try accessing directly: https://platform.openai.com/account/api-keys
-- Ensure you have account access (not just team member)
-- Clear browser cache and try again
-
-### Issue: "No free credits available"
-**Solution**:
-- Check if you're using a new or existing account
-- View billing details to see payment methods
-- Contact OpenAI support if unsure
-
-### Issue: "Rate limit exceeded"
-**Solution**:
-- You've made too many API calls too quickly
-- Wait a few moments before making new requests
-- Consider upgrading to a paid plan for higher limits
-
----
-
-## FAQ
-
-**Q: How much do API calls cost?**
-A: Pricing varies by model. Check https://openai.com/pricing for current rates. New accounts get free trial credits.
-
-**Q: Can I use one API key for multiple projects?**
-A: Yes, but it's recommended to create separate keys for different projects for better tracking and security.
-
-**Q: What if I lose my API key?**
-A: Create a new one! Old keys can be revoked from the API keys dashboard.
-
-**Q: Is my API key tied to my account?**
-A: Yes, the key authenticates requests as your account. Charges will be billed to your account.
-
-**Q: Can I have multiple API keys?**
-A: Yes! You can create as many as needed and manage them from the API keys page.
-
----
-
 ## What You Have Now
 
 After completing Step 1, you have:
@@ -493,8 +436,56 @@ python --version
 pip --version
 python -c "import openai; print(openai.__version__)"
 ```
+**Q: How much do API calls cost?**
+A: Pricing varies by model. Check https://openai.com/pricing for current rates. New accounts get free trial credits.
 
-All should return version numbers without errors.
+**Q: Can I use one API key for multiple projects?**
+A: Yes, but it's recommended to create separate keys for different projects for better tracking and security.
+
+**Q: What if I lose my API key?**
+A: Create a new one! Old keys can be revoked from the API keys dashboard.
+
+**Q: Is my API key tied to my account?**
+A: Yes, the key authenticates requests as your account. Charges will be billed to your account.
+
+**Q: Can I have multiple API keys?**
+A: Yes! You can create as many as needed and manage them from the API keys page.
+
+## Troubleshooting
+
+### Issue: "Free trial credits expired"
+**Solution**: 
+- Upgrade to a paid account
+- Add a payment method in Billing settings
+- See current pricing at: https://openai.com/pricing
+
+### Issue: "API key not working / Authentication failed"
+**Solution**:
+- Verify the key is copied completely (check for missing characters)
+- Ensure there are no extra spaces before/after the key
+- Check if the key has been revoked (view in API keys page)
+- Try creating a new key
+
+### Issue: "Can't find API keys in settings"
+**Solution**:
+- Log out and log back in
+- Try accessing directly: https://platform.openai.com/account/api-keys
+- Ensure you have account access (not just team member)
+- Clear browser cache and try again
+
+### Issue: "No free credits available"
+**Solution**:
+- Check if you're using a new or existing account
+- View billing details to see payment methods
+- Contact OpenAI support if unsure
+
+### Issue: "Rate limit exceeded"
+**Solution**:
+- You've made too many API calls too quickly
+- Wait a few moments before making new requests
+- Consider upgrading to a paid plan for higher limits
+
+---
 
 ## Useful Links
 
