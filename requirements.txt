@@ -1,0 +1,29 @@
+# LLM101 Course - Python Dependencies
+
+# OpenAI API
+openai>=1.3.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Jupyter & IPython
+jupyter>=1.0.0
+ipython>=8.0.0
+jupyter-client>=7.0.0
+
+# HTTP & Requests
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# JSON & Data Handling
+jsonlines>=4.0.0
+
+# Async Support
+aiohttp>=3.9.0
+
+# Utilities
+tqdm>=4.66.0
